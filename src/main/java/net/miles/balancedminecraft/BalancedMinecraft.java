@@ -20,5 +20,7 @@ public class BalancedMinecraft implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		// oooo magic comment thingie
+		// oooo magic comment thingie 2
+
 	}
 }
