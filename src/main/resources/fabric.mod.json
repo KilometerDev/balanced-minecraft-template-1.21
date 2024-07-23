@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "balancedminecraft",
+	"version": "${version}",
+	"name": "Balanced Minecraft",
+	"description": "Balances Minecraft to not have such a rushed and overpowered Endgame - Made by Miles",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/balancedminecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.miles.balancedminecraft.BalancedMinecraft"
+		],
+
+		"client": [
+			"net.miles.balancedminecraft.BalancedMinecraftClient"
+		],
+
+		"fabric-datagen": [
+			"net.miles.balancedminecraft.BalancedMinecraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"balancedminecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
